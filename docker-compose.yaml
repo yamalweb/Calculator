@@ -1,0 +1,10 @@
+services:
+    frontend:
+        build:
+            context: .
+            target: dev-envs
+        container_name: calc-frontend
+        ports:
+            - '3000:3000'
+        volumes:
+            - ./:/app
